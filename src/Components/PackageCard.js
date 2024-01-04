@@ -23,9 +23,11 @@ function PackageCard({ packageData }) {
   };
 
   return (
+    <>
+    
     <div style={{ marginBottom: '20px', textAlign: 'center' }}>
       <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={packageData.image} style={{ objectFit: 'contain', height: '500px' }} />
+        <Card.Img variant="top" src={packageData.image} style={{ objectFit: 'contain', height: '500px'}} />
         <Card.Body>
           <Card.Title>{packageData.title}</Card.Title>
           <Card.Text>{packageData.description}</Card.Text>
@@ -59,6 +61,7 @@ function PackageCard({ packageData }) {
         </div>
       )}
     </div>
+    </>
   );
 }
 
