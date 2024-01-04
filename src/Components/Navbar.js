@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../Images/logo.png';
 import user from '../Images/profile.png';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
@@ -15,7 +16,7 @@ function Navbar() {
         <div className="navbar-links-items" id="navbarText">
           <ul className="items">
             <li className="nav-item">
-              <a className="nav-link home" aria-current="page" href="abc.com">Home</a>
+              <a className="nav-link home" aria-current="page" href="/home">Home</a>
             </li>
             <li className="nav-item">
               <a className="nav-link about" href="abc.com">About Us</a>
@@ -24,7 +25,7 @@ function Navbar() {
               <a className="nav-link destinations" href="abc.com">Destinations</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link packages" href="abc.com">Packages</a>
+              <Link to="/packages" className="nav-link packages" href="abc.com">Packages</Link>
             </li>
             <li className="nav-item">
               <button className="btn btn-success btn-transparent-border">Create Package</button>

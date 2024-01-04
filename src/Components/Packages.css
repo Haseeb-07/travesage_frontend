@@ -1,0 +1,14 @@
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .card {
+    margin-right: 10px;
+  }
+  
+  .card-body {
+    display: block; 
+  }
+  
